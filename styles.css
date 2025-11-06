@@ -1,0 +1,97 @@
+/* SPITZ Site — No contact in header */
+:root {
+  --brand:#E4312A;
+  --bg:#ffffff;
+  --text:#000000;
+  --muted:#7a7a7a;
+  --maxw:980px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:'Montserrat',sans-serif;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.6;
+}
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:16px;
+}
+
+/* HEADER */
+.header{
+  background:#ffffff;
+  border-bottom:1px solid #f0f0f0;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px 16px;
+}
+.logo{height:40px}
+
+/* HERO */
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:#ffffff;
+  border-top:1px solid #f0f0f0;
+  border-bottom:1px solid #f0f0f0;
+}
+.hero::before{
+  content:"";
+  position:absolute; inset:0;
+  background-image:url('assets/spitz-world-map-red.png');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  opacity:.10;
+  pointer-events:none;
+}
+.hero-content{
+  text-align:center;
+  padding:64px 16px 72px;
+  position:relative;
+}
+h1{
+  font-weight:700;
+  font-size:40px;
+  letter-spacing:.02em;
+  margin:0 0 24px;
+}
+.text-block{
+  max-width:600px;
+  margin:0 auto 28px;
+  font-weight:400;
+}
+.text-block p{margin-bottom:16px}
+.btn{
+  display:inline-block;
+  padding:12px 28px;
+  background:var(--brand);
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  border:none;
+  border-radius:0;
+  transition:transform .1s ease-in-out;
+}
+.btn:hover{transform:translateY(-1px)}
+
+/* FOOTER */
+.footer{
+  background:#ffffff;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
+  padding:26px 16px 40px;
+}
+
+@media (max-width:640px){
+  h1{font-size:32px}
+  .logo{height:34px}
+  .text-block{max-width:90%}
+}
