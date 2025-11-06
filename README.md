@@ -49,25 +49,9 @@ It features a minimal and responsive layout, optimized for fast loading and clea
 
 ---
 
-## 🌐 Custom Domain (Optional)
-
-To connect a custom domain:
-1. Create a file named `CNAME` in the root directory.  
-2. Add your domain inside, e.g.:
-   ```
-   www.spitz-tools.com
-   ```
-3. Update your DNS records as follows:
-   - **A records** → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`  
-   - **CNAME** → `<username>.github.io`
-
-GitHub Pages will automatically issue an HTTPS certificate once propagation is complete.
-
----
-
 ## 📧 Contact
 
 For partnership inquiries or distribution opportunities, contact:  
-**📩 contact@example.com**
+**📩 .com**
 
 © 2025 SPITZ — European Engineering Excellence. All rights reserved.
